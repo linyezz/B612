@@ -1,0 +1,5 @@
+<template name="sexAge">
+<view class="sex {{sex==1?'boy':'girl'}}" wx:if="{{sex!=0}}">
+<view class='age'>{{age?age:'--'}}</view>
+</view>
+</template>

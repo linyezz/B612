@@ -1,0 +1,329 @@
+/* pages/home/home.wxss */
+@import "../tpls/sex/sex_tpl.wxss";
+page{
+  background: #141E3F;
+}
+.home-head {
+  display: -webkit-box;
+  padding-top: 36rpx;
+  padding-left: 40rpx;
+  -webkit-box-align: center;
+  background-size: 100% auto;
+  position: relative;
+}
+
+.home-my-name {
+  font-size: 64rpx;
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  margin-bottom: 64rpx;
+}
+
+.home-my-avatar {
+  height: 228rpx;
+  width: 228rpx;
+  position: relative;
+  margin-bottom: 32rpx;
+  padding: 1rpx;
+  margin-left: 52rpx;
+}
+
+.home-my-image {
+  /* border: 8rpx solid #fff; */
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  display: block;
+  margin-top:13rpx;
+  margin-left: 7rpx; 
+}
+
+.plant-rings {
+  position: absolute;
+  width: 320rpx;
+  height: 228rpx;
+  top: 0rpx;
+  left: -52rpx;
+}
+
+.simple-intro {
+  display: -webkit-box;
+  margin-left: 32rpx;
+  font-size: 28rpx;
+  color: #fff;
+  margin-bottom: 8rpx;
+  -webkit-box-align: center;
+}
+
+.constellation {
+  margin-right: 8rpx;
+}
+
+.home-head-right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  right: 128rpx;
+  
+}
+
+.home-edit {
+  display: flex;
+  align-items: center;
+  margin: 24rpx 0;
+}
+
+.edit-icon {
+  height: 66rpx;
+  width: 66rpx;
+  border-radius: 8rpx;
+  margin-right: 24rpx;
+}
+
+.edit-icon image {
+  height: 66rpx;
+  width: 66rpx;
+  border: 8rpx;
+}
+
+.edit-title {
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.home-detail {
+  background: #111C30;
+  padding-top: 72rpx;
+}
+
+.home-detail-body {
+  background: #fff;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+}
+
+.home-friend-list {
+  margin-left: 40rpx;
+  height: 176rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding-right: 32rpx;
+}
+
+.friend-list-title {
+}
+
+.friend-num {
+  font-size: 36rpx;
+  color: #212121;
+  letter-spacing: 0;
+  margin-bottom: 4rpx;
+  font-weight: bold;
+}
+
+.friend-tip1 {
+  font-size: 22rpx;
+  color: #212121;
+  letter-spacing: 0;
+}
+
+.friends-list-head {
+  margin-left: 10rpx;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-flex: 1;
+}
+
+.my-friend-head {
+  height: 80rpx;
+  width: 80rpx;
+ 
+  border-radius: 200px;
+}
+
+.my-friend-head image {
+  height: 75rpx;
+  width: 75rpx;
+ 
+  margin-right: 24rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 4rpx auto;
+}
+
+.more-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.more-icon image {
+  width: 100%;
+  height: 100%;
+}
+
+.home-label-list {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  height: 336rpx;
+  margin-left: 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-right: 32rpx;
+}
+
+.list-title {
+}
+
+.list-title-num {
+  font-size: 36rpx;
+  color: #212121;
+  letter-spacing: 0;
+  margin-bottom: 4rpx;
+  font-weight: bold;
+}
+
+.list-tip {
+  font-size: 22rpx;
+  color: #212121;
+  letter-spacing: 0;
+}
+
+.labels-list {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  margin-left: 32rpx;
+}
+
+.label-body {
+  height: 222rpx;
+  width: 222rpx;
+  
+  border-radius: 50%;
+  margin-right: 24rpx;
+ 
+}
+
+.label-back {
+  height: 202rpx;
+  width: 202rpx;
+  border-radius: 50%;
+  margin: 10rpx auto;
+  position: relative;
+  
+}
+
+.label-back-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.label-body-detail {
+  position: absolute;
+  background: rgba(45, 45, 45, 0.48);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.label-title {
+  font-size: 24rpx;
+  color: #fff;
+  letter-spacing: 0;
+  margin-left: 44rpx;
+  margin-top: 68rpx;
+}
+
+.label-num {
+  font-size: 24rpx;
+  color: #fff;
+  letter-spacing: 0;
+  margin-left: 44rpx;
+}
+
+.add-lable-body {
+  -webkit-box-flex: 1;
+  margin-left: 32rpx;
+  
+}
+.add-lable-outside{
+width: 222rpx;
+  height: 222rpx;
+  
+  border-radius:50%; 
+  padding:1rpx;  
+}
+
+.add-lable {
+  width: 201.8rpx;
+  height: 201.8rpx;
+  border: 1px solid #FE4F7A;
+  border-radius: 50%;
+  margin: 9rpx auto; 
+}
+.add-lable-tip{
+  font-size: 24rpx;
+  color: #FE4F7A;
+  letter-spacing: 0;
+  line-height: 33rpx;
+  padding: 64.9rpx 19.9rpx 0 25.9rpx;
+}
+.home-album-list {
+  height: 212rpx;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  margin-left: 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-right: 32rpx;
+}
+
+.photo-list {
+  -webkit-box-flex: 1;
+  margin-left: 94rpx;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+
+.user-photo {
+  width: 112rpx;
+  height: 112rpx;
+  margin-right: 16rpx;
+}
+
+.add-photo-icon image {
+  width: 112rpx;
+  height: 112rpx;
+}
+
+.home-other-info {
+  min-height: 213rpx;
+  margin-left: 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-right: 32rpx;
+}
+
+.other-info-title {
+  font-size: 36rpx;
+  color: #262628;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  font-weight: bold;
+  margin-top: 48rpx;
+  margin-bottom: 12rpx;
+}
+
+.other-info-tip {
+  font-size: 32rpx;
+  color: #262628;
+  letter-spacing: 0;
+  width: 604rpx;
+  word-wrap: break-word;
+}
+.home-head-left{
+  -webkit-box-flex: 1
+}

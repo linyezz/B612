@@ -1,0 +1,41 @@
+<view class="container my-container">
+  <view class='my-head' bindtap='navigateToMyPlanet'>
+    <view class='my-head-left'>
+      <view class='my-head-name'>{{userInfo.nickname}}星</view>
+      <view class='my-head-progress'>查看个人资料(完善度{{userInfo.data_percent}}%)</view>
+    </view>
+    <view class='my-head-right'>
+      <image src='{{userInfo.thumb_head_url}}' mode='aspectFill'></image>
+    </view>
+  </view>
+  <view class='my-list'>
+    <view class='my-list-detail' bindtap='navigateToMessage'>
+      <view class='my-list-title'>通知</view>
+      <view class='my-list-icon'>
+        <image src='../../imgs/icon/mine_notice.png'></image>
+      </view>
+      <view class='red-icon' wx:if='{{!isRedHidden}}'></view>
+    </view>
+
+    <view class='my-list-detail' bindtap='goToFriend'>
+      <view class='my-list-title'>我的好友</view>
+      <view class='my-list-icon'>
+        <image src='../../imgs/icon/mine_friend.png'></image>
+      </view>
+    </view>
+
+    <view class='my-list-detail' bindtap='gotoHeartFriend'>
+      <view class='my-list-title'>我的心动</view>
+      <view class='my-list-icon'>
+        <image src='../../imgs/icon/mine_like.png'></image>
+      </view>
+    </view>
+    <view class='my-list-detail' bindtap='toPhone'>
+      <view class='my-list-title'>我的微信号</view>
+      <view class='my-list-icon'>
+        <image src='../../imgs/icon/mine_wechat.png'></image>
+      </view>
+    </view>
+
+  </view>
+</view>

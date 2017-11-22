@@ -1,0 +1,5 @@
+<template name="avatar">
+<view class='user-head-body'>
+<image class='user-head-img' src='{{thumb_head_url}}' mode='aspectFill'></image>
+</view>
+</template>

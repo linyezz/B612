@@ -1,0 +1,82 @@
+/* pages/edit/edit.wxss */
+@import '../tpls/arrow/arrow_tpl.wxss';
+.edit-head{
+  padding-top: 19rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 64rpx;
+  
+}
+.user-header{
+  width: 300rpx;
+  height: 300rpx;
+  position: relative;
+  padding: 1rpx;
+}
+.user-avatar{
+  width: 261.9rpx;
+  height: 261.9rpx;
+  border-radius: 50%;
+  display: block;
+  margin-top: 19.2rpx;
+  margin-left: 15.2rpx;
+}
+.avatar-rings{
+  width: 440rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 0rpx;
+  left: -73.2rpx;
+}
+.avatar-icon{
+  width: 78rpx;
+  height: 78rpx;
+  position: absolute;
+  bottom: 8rpx;
+  right: 8rpx;
+}
+.userinfo-detail{
+  padding-top: 1rpx;
+  height: 169rpx;
+  margin-left: 40rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+.userinfo-title{
+  font-size: 32rpx;
+color: #606060;
+letter-spacing: 0;
+margin-top: 28rpx;
+line-height: 45rpx;
+}
+.userinfo-cotent{
+  font-size: 36rpx;
+  color: #212121;
+  letter-spacing: 0;
+  width: 605rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 34rpx;
+  line-height: 50rpx;
+}
+picker{
+  margin-top: 34rpx;
+  font-size: 36rpx;
+  color: #212121;
+  letter-spacing: 0;
+}
+.arrow{
+  position: absolute;
+  bottom: 42rpx;
+  right: 42rpx;
+}
+.userinfo-list-body{
+  background: #0F192A;
+}
+.userinfo-list{
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  background: #fff;
+}

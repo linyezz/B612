@@ -1,0 +1,50 @@
+/* pages/changeText/changeText.wxss */
+.change-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  margin-top: 14rpx;
+  margin-left: 40rpx;
+}
+.line{
+  width: 80rpx;
+  height: 6rpx;
+  background: #9c9ca4;
+  margin-top: 48rpx;
+  margin-left: 40rpx;
+}
+.input-area{
+  position: relative;
+  background: #fff;
+  width: 670rpx;
+  height: 408rpx;
+  margin: 28rpx auto;
+  font-size: 34rpx;
+  color: #606060;
+}
+.text-area{
+  width: 670rpx;
+  font-size: 34rpx;
+  color: #606060;
+  height: 408rpx;
+}
+.word-num{
+  font-size: 28rpx;
+  color: #C7C7CB;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.preservation{
+  width: 750rpx;
+  height: 102rpx;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  line-height: 102rpx;
+  background:  linear-gradient(-45deg, #FE51A0 0%, #FF6262 100%);
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+

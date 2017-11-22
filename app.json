@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/loading/loading",
+    "pages/planet/planet",
+    "pages/my/my",
+    "pages/home/home",
+    "pages/message/message",
+    "pages/edit/edit",
+    "pages/album/album",
+    "pages/friends/friends",
+    "pages/changeText/changeText",
+    "pages/label/label",
+    "pages/share/share",
+    "pages/job/job",
+    "pages/beckoning/beckoning",
+    "pages/middle/middle",
+    "pages/accredit/accredit",
+    "pages/phone/phone",
+    "pages/apply/apply",
+    "pages/tagnot/tagnot",
+    "pages/heartfriend/heartfriend"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      
+      {
+        "pagePath": "pages/planet/planet",
+        "text": "单身星球",
+        "iconPath": "imgs/icon/planet.png",
+        "selectedIconPath": "imgs/icon/planet@selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "imgs/icon/my.png",
+        "selectedIconPath": "imgs/icon/my@selected.png"
+      }
+    ],
+    "backgroundColor":"#111D31",
+    "color": "#7F8389",
+    "selectedColor": "#ffffff"
+  },
+  "debug":false
+}

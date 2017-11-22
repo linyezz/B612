@@ -1,0 +1,15 @@
+.user-head-body{
+  height:110rpx;
+  width: 110rpx;
+  border-radius: 50%; 
+  background: url(http://ztest2-pic.miliyo.com/mp/i/B612/head_less.png) no-repeat;
+  background-size:100% 100%; 
+  
+}
+.user-head-img{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  margin: 7rpx auto;
+  display: block;
+}

@@ -1,0 +1,19 @@
+<import src="../tpls/empty/empty.wxml" />
+<import src="../tpls/message/message_tpl.wxml"/>
+<import src="../tpls/prompt/prompt_tpl.wxml"/>
+<view class='container'>
+  <view class='page-title'>通知</view>
+  <view wx:if="{{isEmpty}}">
+    <template is="pageEmpty" data="{{pageEmpty}}">
+    </template>  
+  </view>
+
+  <view wx:else>
+   <template is="messageInfo" data="{{message:Apply,index:0,click:1}}"></template>
+   <template is="messageInfo" data="{{message:beckoning,index:0,click:2}}"></template>
+   <template is="messageInfo" data="{{message:labelMessage,index:0,click:3}}"></template>
+   <block wx:for="{{getPhoneList}}">
+    <template is="messageInfo" data="{{message:item,index:index,click:4}}"></template>
+   </block>
+  </view>
+</view>

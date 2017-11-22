@@ -1,0 +1,8 @@
+.arrow{
+  width: 24rpx;
+  height: 24rpx;
+}
+.arrow image{
+  width: 24rpx;
+  height: 24rpx;
+}

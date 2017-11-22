@@ -1,0 +1,6 @@
+<view class="container">
+<view class='share-title'>单身星球</view>
+<canvas class="sahre-img"  canvas-id="share"/>
+<view class='Preservation' bindtap='keepPicture'>保存二维码图片</view>
+<button open-type='share' class='send-out' >发送给好友</button>
+</view>

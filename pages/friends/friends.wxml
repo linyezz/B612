@@ -1,0 +1,23 @@
+<import src="../tpls/friend/friend_tpl.wxml" />
+<import src="../tpls/empty/empty.wxml"/>
+<view class='container'>
+<view class='friend-title'>{{friend_uid1?'TA的好友':'我的好友'}}</view>
+<view wx:if="{{isEmpty}}">
+<template is="pageEmpty" data="{{pageEmpty}}"></template>
+</view>
+<view wx:else>
+<scroll-view scroll-x="false" scroll-y="true">
+  <view class='friends-list'  >
+  <!-- <view class='item_letter'>{{item.initial}}</view> -->
+    <block wx:for="{{friendList}}">
+      <template is="friend" data='{{...item}}'></template>
+    </block>
+  </view>
+  </scroll-view>
+  </view>
+  <!-- <view class='tip-num {{touch}}' bindtouchstart='touchStart'>
+    <block wx:for="{{Letter}}" wx:for-item="letter">
+    <view bindtouchmove='tipTouch' class="letter-tip {{letter.isSelected?'letter-select':''}}">{{letter.tip}}</view>
+    </block>
+  </view> -->
+</view>

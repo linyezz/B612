@@ -1,0 +1,22 @@
+.sex{
+  width: 56rpx;
+  height: 24rpx;
+  border-radius: 4rpx;
+ 
+  text-align: right;
+}
+.boy{
+background:url(http://ztest2-pic.miliyo.com/mp/i/B612/man.png) no-repeat;
+background-size:100% 100%; 
+}
+.girl{
+background:url(http://ztest2-pic.miliyo.com/mp/i/B612/woman.png) no-repeat;
+background-size:100% 100%; 
+}
+.age{
+  font-size: 20rpx;
+  color: #FFFFFF;
+  line-height: 24rpx;
+  margin-right: 5rpx;
+  
+}

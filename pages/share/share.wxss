@@ -1,0 +1,39 @@
+/* pages/share/share.wxss */
+.sahre-img{
+  width: 310px;
+  height: 248px;
+  margin: 57rpx auto;
+}
+.Preservation{
+  width: 568rpx;
+  height: 94rpx;
+  background: linear-gradient(45deg, #FE51A0 0%, #FF6262 100%);
+  box-shadow: 0 26rpx 50rpx 0 #FFA5BB;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 94rpx;
+  border-radius: 100px;
+  margin: 39rpx auto;
+}
+.send-out{
+  width: 568rpx;
+  height: 94rpx;
+  border-radius: 100px;
+  border:1rpx solid #FE51A0;
+  margin: 64rpx auto;
+  text-align: center;
+  line-height: 94rpx;
+  font-size: 36rpx;
+  color: #FE4F7A;
+  background: #FFFFFF;
+}
+.share-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60px;
+  font-weight: bold;
+  padding-left: 40rpx;
+  padding-top: 14rpx;
+}

@@ -1,0 +1,4 @@
+<template name="pageEmpty">
+<image class='empty-img' src="{{pageEmpty.url}}"></image>
+<view class='empty-cont'>{{pageEmpty.cont}}</view>
+</template>

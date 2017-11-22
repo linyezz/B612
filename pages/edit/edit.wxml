@@ -1,0 +1,78 @@
+<import src='../tpls/arrow/arrow_tpl.wxml' />
+<view class="container">
+  <view class='edit-head' style='background: url({{imgUrl}}hp_bj.png) no-repeat;background-size:100% auto; '>
+    <view class='user-header'>
+      <image src='{{userInfo.thumb_head_url}}' class='user-avatar' mode='aspectFill'></image>
+      <image src='{{imgUrl}}hp_head.png' class='avatar-rings'></image>
+      <image src='{{imgUrl}}yinxiang_camera_red.png' class='avatar-icon' catchtap='changeImg'></image>
+    </view>
+  </view>
+  <view class='userinfo-list-body'>
+    <view class='userinfo-list'>
+
+      <view class='userinfo-detail' bindtap='goToChange' data-mold="1">
+        <view class='userinfo-title'>
+          昵称
+        </view>
+        <view class='userinfo-cotent'>
+          {{userInfo.nickname}}
+        </view>
+        <template is="arrow" class='arrow'></template>
+      </view>
+      <view class='userinfo-detail'>
+        <view class='userinfo-title'>出生日期</view>
+        <view>
+          <picker mode="date" bindchange="bindDateChange" value="{{date}}" start="1969-1-1" end="2017-12-30">
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+        </view>
+        <template is="arrow" class='arrow'></template>
+      </view>
+      <view class='userinfo-detail' bindtap='choiceJob'>
+        <view class='userinfo-title'>职业</view>
+        <view class='userinfo-cotent'>
+          {{userInfo.job}}
+        </view>
+        <template is="arrow" class='arrow'></template>
+      </view>
+      <view class='userinfo-detail'>
+        <view class='userinfo-title'>常住地</view>
+        <picker mode='region' bindchange='bindRegionChange' value='{{region}}'>
+          <view class='userinfo-local'>
+            {{region[0]}}·{{region[1]}}.{{region[2]}}
+          </view>
+        </picker>
+        <template is="arrow" class='arrow'></template>
+      </view>
+      <view class='userinfo-detail' bindtap='goToChange' data-mold="2">
+        <view class='userinfo-title'>
+          内星独白
+        </view>
+        <view class='userinfo-cotent'>
+          {{userInfo.inner_monologue}}
+        </view>
+        <template is="arrow" class='arrow'></template>
+      </view>
+      <view class='userinfo-detail' bindtap='goToChange' data-mold="3">
+        <view class='userinfo-title'>
+          星趣爱好
+        </view>
+        <view class='userinfo-cotent'>
+          {{userInfo.hobby}}
+        </view>
+        <template is="arrow" class='arrow'></template>
+      </view>
+      <view class='userinfo-detail' bindtap='goToChange' data-mold="4">
+        <view class='userinfo-title'>
+          理想星
+        </view>
+        <view class='userinfo-cotent'>
+          {{userInfo.ideal_star}}
+        </view>
+        <template is="arrow" class='arrow'></template>
+      </view>
+    </view>
+  </view>
+</view>

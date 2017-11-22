@@ -1,0 +1,5 @@
+<template name="arrow">
+<view class='arrow'>
+<image src='../../imgs/icon/arrow.png'></image>
+</view>
+</template>

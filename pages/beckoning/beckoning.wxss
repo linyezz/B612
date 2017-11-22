@@ -1,0 +1,20 @@
+@import "../tpls/message/message_tpl.wxss";
+@import "../tpls/empty/empty.wxss";
+@import "../tpls/prompt/prompt_tpl.wxss";
+.beckoning-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  margin-bottom: 40rpx;
+  margin-left: 40rpx;
+}
+.layer{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}

@@ -1,0 +1,119 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wxef945e3e5b6aabf0",
+	"projectname": "wxB612",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人主页",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑页面",
+					"pathName": "pages/edit/edit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息首页",
+					"pathName": "pages/message/message",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "相册",
+					"pathName": "pages/album/album",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "好友列表",
+					"pathName": "pages/friends/friends",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改信息",
+					"pathName": "pages/changeText/changeText",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "星球主页",
+					"pathName": "pages/planet/planet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分享二维码",
+					"pathName": "pages/share/share",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "标签页面",
+					"pathName": "pages/label/label",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "选择职业",
+					"pathName": "pages/job/job",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "心动",
+					"pathName": "pages/beckoning/beckoning",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "可能认识的人",
+					"pathName": "pages/middle/middle",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "授权页面",
+					"pathName": "pages/accredit/accredit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手机号",
+					"pathName": "pages/phone/phone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我星动的",
+					"pathName": "pages/heartfriend/heartfriend",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,49 @@
+/* pages/friends/friends.wxss */
+@import "../tpls/friend/friend_tpl.wxss";
+@import "../tpls/empty/empty.wxss";
+.apply-title{
+font-size: 64rpx;
+color: #212121;
+letter-spacing: 0;
+line-height: 60rpx;
+margin-left: 40rpx;
+font-weight: bold;
+}
+.friends-list{
+  margin-top: 40rpx;
+}
+.tip-num{
+  position:fixed;
+  top: 124rpx;
+  right: 13rpx;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  z-index: 99;
+}
+.letter-tip{
+font-size: 16rpx;
+color: #797979;
+letter-spacing: 0;
+margin-bottom: 10rpx;
+}
+.letter-select{
+height: 22rpx;
+width: 22rpx;
+font-size: 16rpx;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+line-height: 22rpx;
+border-radius:50%; 
+background: #212121;
+}
+.item_letter{
+  height: 40rpx;
+  background: #F7FAFC;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #0484FD;
+  letter-spacing: 0;
+  padding-left: 40rpx;
+}

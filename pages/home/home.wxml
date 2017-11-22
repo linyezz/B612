@@ -1,0 +1,166 @@
+<import src="../tpls/sex/sex_tpl.wxml" />
+<view class='container'>
+  <view class='home-head' style="background: url('{{homeBg}}'); background-size:100% auto;">
+    <view class='home-head-left'>
+      <view class='home-my-name'>{{userInfo.nickname}}星</view>
+      <view class='home-my-avatar ' catchtap='previewImage' data-previewImage='{{userInfo.head_url}}'>
+        <image class='home-my-image' src='{{userInfo.thumb_head_url}}' mode='aspectFill'></image>
+        <image class='plant-rings' src='{{imgUrl}}hp_head.png'></image>
+      </view>
+      <view class='simple-intro'>
+        <view class='constellation'>{{userInfo.constellation?userInfo.constellation:''}}座 </view>
+
+        <template is="sexAge" data="{{...userInfo}}"></template>
+
+      </view>
+      <view class='simple-intro'>
+        <text class='simple-intro-tip'>{{userInfo.address}}·</text>
+        <text class='simple-intro-tip'>{{userInfo.job}}</text>
+      </view>
+    </view>
+    <view class='home-head-right'>
+      <!--自己的主页  -->
+      <view class='home-edit' bindtap='goToEdit' wx:if="{{isMy}}">
+        <view class='edit-icon'>
+          <image src='{{imgUrl}}hp_edit.png'></image>
+        </view>
+        <text class='edit-title'>编辑</text>
+      </view>
+      <!-- 好友 -->
+      <view wx:if="{{userInfo.friend_uid1&&!userInfo.friend_uid2&&!userInfo.friend_uid3}}">
+        <view class='home-edit' bindtap='Beckoning'>
+          <view class='edit-icon'>
+            <image wx:if="{{userInfo.is_heartflow==1}}" src='{{imgUrl}}hp_like.png'></image>
+            <image wx:else src="{{imgUrl}}hp_like_nor.png"></image>
+          </view>
+          <text class='edit-title'>{{userInfo.is_heartflow==1?'已星动':'星动'}}</text>
+        </view>
+        <view class='home-edit' bindtap='getPhone'>
+          <view class='edit-icon'>
+            <image src='{{imgUrl}}hp_wechat.png'></image>
+          </view>
+          <text class='edit-title'>微信号</text>
+        </view>
+        </view>
+        <!--二度好友  -->
+        <view wx:if="{{friend_uid1&&friend_uid2}}">
+          <view class='home-edit'>
+            <view class='edit-icon' bindtap='Beckoning' >
+              <image wx:if="{{userInfo.is_heartflow==1}}" src='{{imgUrl}}hp_like.png'></image>
+              <image wx:else src="{{imgUrl}}hp_like_nor.png"></image>
+            </view>
+            <text class='edit-title'>{{userInfo.is_heartflow==1?'已星动':'星动'}}          </text>
+          </view>
+
+          <view class='home-edit'>
+            <view class='edit-icon' bindtap='addFriend' data-friendone="{{userInfo.friend_uid1}}" data-friendtwo="{{userInfo.friend_uid2}}" data-friendthree="{{userInfo.friend_uid3}}" data-leave='{{userInfo.leave}}'>
+              <image wx:if="{{userInfo.is_add_friend==0}}" src='{{imgUrl}}hp_add.png'></image>
+              <image wx:if="{{userInfo.is_add_friend==1}}" src='{{imgUrl}}hp_agree.png'></image>
+              <!-- <image wx:if="{{isSend==3}}" src='http://ztest2-pic.miliyo.com/mp/i/B612/hp_send.png'></image> -->
+            </view>
+            <text class='edit-title' wx:if="{{userInfo.is_add_friend==0}}">加好友</text>
+            <text class='edit-title' wx:if="{{userInfo.is_add_friend==1}}">已发送</text>
+            <!-- <text class='edit-title' wx:if="{{isSend==3}}">接受</text> -->
+          </view>
+
+        </view>
+
+      </view>
+    </view>
+    <view class='home-detail'>
+      <view class='home-detail-body'>
+        <view class='home-friend-list' data-friendone="{{userInfo.friend_uid1}}" data-friendtwo="{{userInfo.friend_uid2}}" data-leave='{{userInfo.leave}}' bindtap='goFriendList'>
+          <view class='friend-list-title'>
+            <view class='friend-num'>{{userInfo.friend_num}}个</view>
+            <text class='friend-tip1'>单身星</text>
+          </view>
+          <view class='friends-list-head'>
+          <block wx:for="{{userInfo.user_info_list}}">
+            <view class='my-friend-head' style=' background: url({{imgUrl}}head_less.png) no-repeat;background-size:100% 100%; ' data-uid='{{item.uid}}' wx:if="{{!item.isMyself}}">
+              <image src='{{item.thumb_head_url}}' mode='aspectFill'></image>
+            </view>
+           </block> 
+          </view>
+          <view class='more-icon'>
+            <image src='../../imgs/icon/arrow.png'></image>
+          </view>
+        </view>
+        <view class='home-label-list' bindtap='goToLabel' data-impressionnum='{{userInfo.impression_num}}'>
+          <view class='list-title'>
+            <view class='list-title-num'>{{userInfo.impression_num}}</view>
+            <view class='list-tip'>好友星印象</view>
+          </view>
+
+
+          <view class='add-lable-body' wx:if="{{userInfo.impress_tag_list.length==0}}">
+            <view class='add-lable-outside' style='background: url({{imgUrl}}yinxiang_frame.png) no-repeat;background-size:100% 100%;'>
+              <view class='add-lable'>
+                <view class='add-lable-tip'>
+                  暂无好友印象快来贴标签吧~
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='labels-list' wx:else>
+          <block wx:for="{{userInfo.impress_tag_list}}">
+            <view class='label-body' style=' background: url({{imgUrl}}yinxiang_frame.png) no-repeat;background-size:100% 100%; '>
+              <view class='label-back'>
+                <image class='label-back-img' src='{{item.last_goods_url}}' mode='aspectFill'></image>
+                <view class='label-body-detail'>
+                  <view class='label-title'>{{item.name}}</view>
+                  <text class='label-num'>{{item.goods_num}}</text>
+                </view>
+              </view>
+            </view>
+          </block>
+          </view>
+
+          <view class='more-icon'>
+            <image src='../../imgs/icon/arrow.png'></image>
+          </view>
+
+        </view>
+        <view class='home-album-list' bindtap='goToAlbum'>
+          <view class='list-title'>
+            <view class='list-title-num'>{{userInfo.photo_num}}</view>
+            <view class='list-tip'>相册</view>
+          </view>
+          <view class='photo-list'>
+          <block wx:for="{{userInfo.photo_path_list}}">
+            <view class='photo-detail'>
+              <image class='user-photo' src='{{item.thumb_img_path}}'></image>
+            </view>
+            </block>
+            <view class='add-photo-icon' wx:if="{{isMy}}">
+            <image src='../../imgs/icon/yinxiang_camera_big.png'></image>
+            </view>
+          </view>
+          <view class='more-icon'>
+            <image src='../../imgs/icon/arrow.png'></image>
+          </view>
+        </view>
+        <view class='home-other-info'>
+          <view class='other-info-title'>内心独白</view>
+          <view class='other-info-tip'>
+           {{userInfo.inner_monologue}}
+          </view>
+        </view>
+        <view class='home-other-info'>
+          <view class='other-info-title'>星趣爱好</view>
+          <view class='other-info-tip'>
+            {{userInfo.hobby}}
+          </view>
+        </view>
+        <view class='home-other-info'>
+          <view class='other-info-title'>理想星</view>
+          <view class='other-info-tip'>
+            {{userInfo.ideal_star}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+<loading hidden="{{loadingHidden}}">
+    加载中...
+</loading> 

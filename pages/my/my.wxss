@@ -1,0 +1,70 @@
+/* pages/my/my.wxss */
+.my-container{
+  padding-top: 21rpx;
+ 
+  
+}
+.my-head{
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding-left:40rpx;
+  padding-right: 40rpx; 
+  margin-bottom: 46rpx;
+  
+}
+.my-head-left{
+  -webkit-box-flex: 1;
+}
+.my-head-name{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60rpx;
+}
+.my-head-progress{
+  font-size: 32rpx;
+  color: #606060;
+  letter-spacing: 0;
+  margin-top: 16rpx;
+}
+.my-head-right image{
+  width: 134rpx;
+  height: 134rpx;
+  border-radius: 50%;
+}
+.my-list-detail{
+  width: 670rpx;
+  height: 170rpx;
+  border-bottom:1px solid rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  position: relative;
+}
+.my-list-title{
+  font-size: 36rpx;
+  color: #212121;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+.my-list-icon image{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+.button{
+  background: #fff;
+  color: #FE4F7A;
+  font-size: 36rpx;
+  border: none;
+}
+.red-icon{
+  width: 24rpx;
+  height: 24rpx;
+  border-radius:50%;
+  position: absolute;
+  background: #FF2568;
+  top: 44rpx;
+  left: 65rpx;
+}

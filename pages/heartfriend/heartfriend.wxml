@@ -1,0 +1,15 @@
+<import src="../tpls/friend/friend_tpl.wxml" />
+<import src="../tpls/empty/empty.wxml"/>
+<view class='container'>
+  <view class='friend-title'>我的星动</view>
+  <view wx:if="{{isEmpty}}">
+    <template is="pageEmpty" data="{{pageEmpty}}"></template>
+  </view>
+  <view wx:else>
+    <view class='friends-list'>
+      <block wx:for="{{heartInfo}}">
+        <template is="friend" data='{{...item}}'></template>
+      </block>
+    </view>
+  </view>
+</view>

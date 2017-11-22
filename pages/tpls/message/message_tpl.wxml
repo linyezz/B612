@@ -1,0 +1,25 @@
+<template name="messageInfo">
+  <view class='message-list'>
+    <view class='message-detail' bindtap='bindMessageTap' data-index="{{index}}" data-type="{{click}}" data-cancheck='{{canCheck}}' data-frienduid="{{friend_uid}}">
+      <view class=' message-left '>
+        <view class='message-img'>
+          <image src='{{message.url}}' mode='aspectFill'></image>
+        </view>
+        <view class='message-num' wx:if="{{message.num}}">
+          {{message.num}}
+        </view>
+      </view>
+      <view class='message-middle '>
+        <view class='message-title '>{{message.types}}</view>
+        <view class='message-content '>{{message.cont}}</view>
+      </view>
+      <view class='message-right' wx:if="{{message.beckoning}}">
+        <image class='beckoning-icon' src="{{message.beckoningIcon}}"></image>
+      </view>
+      <view class='message-right' wx:if="{{message.getPhone}}">
+        <view class="get-phone-btn {{message.agreePhone?'send-phone-btn':''}}" bindtap='agreePhone' data-index='{{index}}'>{{message.agreePhone?'已同意':'同意'}}</view>
+      </view>
+      <view class='message-time '>{{message.time}}</view>
+    </view>
+  </view>
+</template>

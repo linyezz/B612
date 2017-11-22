@@ -1,0 +1,279 @@
+.label-head{
+background: #212121;
+padding-top: 38rpx;
+padding-left: 40rpx;
+position: relative;
+height: 364rpx;
+}
+.label-title{
+  font-size: 64rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  font-weight: bold;
+  margin-top: 3rpx;
+  
+}
+.label-num{
+  font-size: 48rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  font-weight: bold;
+  margin-top: 24rpx;
+
+}
+.label-tip{
+  font-size: 32rpx;
+  color: #CDCDCD;
+  letter-spacing: 0;
+  margin-top: 32rpx;
+}
+.add-label-icon{
+  position: absolute;
+  bottom: 32rpx;
+  right: 40rpx;
+  color: white;
+  font-size: 24rpx;
+  letter-spacing: 0;
+  text-align: center;
+}
+.add-label-icon image{
+  width: 68rpx;
+  height: 68rpx;
+
+}
+.beckoning-icon{
+  position: absolute;
+  bottom:266rpx;
+  right: 0; 
+}
+.beckoning-icon image{
+  width: 102rpx;
+  height: 56rpx;
+}
+.label-body{
+  background: #212121;
+}
+.label-list{
+  background: #FFFFFF;
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 139rpx  24rpx 32rpx 24rpx;
+}
+.label-item{
+  width: 214rpx;
+  height: 214rpx;
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.label-item-con{
+  width: 214rpx;
+  height: 214rpx;
+  
+  border-radius: 50%;
+  position: absolute;
+}
+.label-mid{
+  top: -107rpx;
+  
+}
+.label-item-mid{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.label-inside{
+  border: 10rpx solid #FE4F7A;
+  width: 194rpx;
+  height: 194rpx;
+  border-radius: 50%;
+  position: relative;
+}
+.label-detail-con{
+  font-size: 28rpx;
+  color: #FE4F7A;
+  letter-spacing: 0;
+  position: absolute;
+  top: 51rpx;
+  left: 34rpx;
+}
+
+.agree-icon{
+  position: absolute;
+  bottom: 52rpx;
+  left: 34rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.agree-icon image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.label-detail-con-click{
+  color: #fff;
+}
+.label-img{
+  width: 194rpx;
+  height: 194rpx;
+  border-radius: 50%;
+}
+.inside-white{
+  border: 10rpx solid #fff;
+  background: #212121;
+}
+.layer{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.add-input{
+  width: 100%;
+  height: 114rpx;
+  padding-left: 24rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+.input-area{
+  height: 100%;
+  line-height: 14rpx;
+  color: #000;
+  font-size: 34rpx;
+  width: 580rpx;
+  
+}
+.mid-line{
+  height: 72rpx;
+  width: 2rpx;
+  background: #D8D8D8;
+}
+.input-right{
+  height: 100%;
+  width: 144rpx;
+  font-size: 34rpx;
+  color: #FE4F7A;
+  letter-spacing: 0; 
+  line-height: 114rpx;
+  text-align: center;
+}
+.label-choice-detail{
+  position: fixed;
+  top: 163rpx;
+  left: 50rpx;
+  z-index: 10;
+}
+.choice-detail-body{
+  background: #FFFFFF;
+  border-radius: 8px; 
+  height: 752rpx;
+  width: 650rpx;
+  -webkit-animation: detailShwo 0.5s ;
+  -webkit-transform-origin-x:50%; 
+  backface-visibility:   unset;
+
+}
+@-webkit-keyframes detailShwo{
+  0%{
+    -webkit-transform: scale(0)  ;
+  }
+   
+  100%{
+  -webkit-transform: scale(1) ;
+  }
+}
+.lable-choice-title{
+  font-size: 34rpx;
+  color: #212121;
+  letter-spacing: 0;
+  padding: 48rpx 0 59rpx 32rpx;
+}
+.lable-choice-title span{
+  color: #FE4F7A;
+}
+.user-list{
+  overflow:  scroll;
+}
+.user-detail{
+  margin-left: 32rpx;
+  height: 180rpx;
+  border-bottom: 1rpx solid rgba(0,0,0,0.16);
+  display: -webkit-box;
+  -webkit-box-align: center;
+  position: relative;
+}
+.user-left{
+  height: 110rpx;
+  width: 110rpx;
+  border-radius:50%;
+  margin-right: 18rpx;
+  background: #d2d2d2;
+  background-size:100% 100% 
+}
+.user-head{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  margin: 7rpx auto;
+  display: block;
+}
+.user-name{
+  font-size: 34rpx;
+  color: #212121;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-bottom: 2rpx;
+}
+.user-label{
+  font-size: 32rpx;
+  color: #606060;
+  letter-spacing: 0;
+  margin-top: 2rpx;
+}
+.user-label span{
+  color: #FE4F7A;
+ 
+
+}
+.choice-time{
+  position: absolute;
+  font-size: 24rpx;
+  color: #7A7A84;
+  letter-spacing: 0;
+  top: 28rpx;
+  right: 24rpx;
+}
+.cloce-icon{
+  width:96rpx;
+  height: 96rpx;
+  margin: 58rpx auto;
+}
+.cloce-icon image{
+  width: 100%;
+  height: 100%;
+}
+.tag-lary{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  border-radius: 50%;
+  z-index: 1;
+  
+  width: 100%;
+  height: 100%;
+}
+.isBlack{
+background: rgba(0, 0, 0, 0.5);
+}

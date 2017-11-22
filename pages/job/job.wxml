@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='job-title'>选择职业</view>
+  <view class='job-list'>
+    <block wx:for="{{jobList}}">
+      <view class="job-item {{item.clicked?'job-clicked':''}}" bindtap='jobChoice' data-index="{{index}}">
+        <image class='job-icon' src='{{item.url}}'></image>
+        <view class='job-name'>{{item.name}}</view>
+      </view>
+    </block>
+  
+  </view>
+  <view class='bottom' bindtap='upJob'>保存</view>
+</view>

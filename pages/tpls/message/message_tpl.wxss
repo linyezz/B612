@@ -1,0 +1,101 @@
+.message-detail{
+  height: 180rpx;
+  margin-left: 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-align: center;
+
+}
+.message-left{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background: url(http://ztest2-pic.miliyo.com/mp/i/B612/head_less.png) no-repeat;
+  background-size:100% 100%; 
+  position: relative;
+}
+.message-img{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius:50%;
+  margin: 7rpx auto;
+
+}
+.message-img image{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius:50%;
+  
+}
+.message-num{
+  position: absolute;
+  width:40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  background: #FF2568;
+  left: 72rpx;
+  bottom: 81rpx;
+  border-radius: 50%;
+}
+.message-middle{
+  margin-left: 18rpx;
+}
+.message-title{
+  font-size: 34rpx;
+  color: #212121;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-bottom: 1rpx;
+}
+.message-content{
+  font-size: 32rpx;
+  color: #606060;
+  letter-spacing: 0;
+  margin-top: 2rpx;
+  width: 450rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.message-time{
+  position: absolute;
+  top: 28rpx;
+  right: 24rpx;
+  font-size: 24rpx;
+  color: #7A7A84;
+  letter-spacing: 0;
+}
+.beckoning-icon{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+}
+.message-right{
+  margin-top: 28rpx;
+}
+.get-phone-btn{
+  width: 120rpx;
+  height: 64rpx;
+  background: linear-gradient(-45deg, #FE51A0 0%, #FF6262 100%);
+  border-radius: 9px;
+  font-size: 32rpx;
+  color: #FFFFFF; 
+  letter-spacing: 0;
+  line-height: 64rpx;
+  text-align: center;
+}
+.send-phone-btn{
+  width: 120rpx;
+  height: 64rpx;
+  background: #FFFFFF;
+  font-size: 32rpx;
+  color: #393939; 
+  letter-spacing: 0;
+  line-height: 64rpx;
+}
+

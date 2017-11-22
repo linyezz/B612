@@ -1,0 +1,69 @@
+/* pages/phone/phone.wxss */
+.phone-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  font-weight: bold;
+  padding-top: 38rpx;
+  padding-left: 40rpx;
+  padding-bottom: 40rpx;
+}
+.phone-img{
+  margin-bottom: 64rpx;
+}
+.phone-img image{
+  width: 750rpx;
+  height: 256rpx;
+ 
+}
+.phone-text{
+  width: 588rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+  color: #888888;
+  line-height: 42rpx;
+  text-align: center;
+  
+}
+.btn-body{
+  text-align: center;
+  margin-top: 96rpx;
+}
+.get-phone{
+  background: linear-gradient(-45deg, #FE51A0 0%, #FF6262 100%);
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  width: 670rpx;
+  height:94rpx; 
+}
+.phone-number{
+font-size: 28rpx;
+color: #888888;
+line-height: 42rpx;
+padding-left: 30rpx;
+}
+.show-phone{
+  width: 100%;
+  height: 88rpx;
+  display: -webkit-box;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  padding: 0 30rpx;
+  -webkit-box-align: center;
+  margin-top: 24rpx;
+}
+.show-phone-title{
+  font-size: 34rpx;
+  color: #000000;
+  letter-spacing: 0;
+  -webkit-box-flex: 1;
+}
+switch{
+  margin-right: 40rpx;
+}
+.btn{
+  width: 300rpx;
+  height: 100rpx;
+}

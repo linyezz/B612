@@ -1,0 +1,28 @@
+<import src="../avatar/avatar_tpl.wxml" />
+<import src="../sex/sex_tpl.wxml" />
+<template name="friend">
+  <view class='friend-detail' bindtap='friendHome' data-one='{{friend_uid1}}' data-two="{{friend_uid2}}" data-three="{{friend_uid3}}" wx:if="{{!isMy}}">
+    <template is="avatar" data="{{thumb_head_url}}"></template>
+    <view class='friend-middle'>
+      <view class='friend-name'>{{nickname}}</view>
+      <template is="sexAge" data="{{age:age,sex:sex}}"></template>
+    </view>
+    <!-- <view class='add-friend' wx:if="{{true}}">
+      <view class='add-btn' wx:if="{{!data.isSend}}">加好友</view>
+      <view class='added-btn' wx:else>已发送</view>
+    </view> -->
+
+    <view class='all-friend' wx:if="{{friend_level==1&&otherFriend}}">
+      共同好友
+    </view>
+
+    <view class='add-friend' wx:if="{{friendApply}}">
+      <view class='add-btn' wx:if="{{!isFriend}}" catchtap='agreeApply' data-uid='{{uid}}' data-index="{{index}}">接受</view>
+      <view class='added-btn' wx:else>已添加</view>
+    </view>
+
+    <view class='beckoning' wx:if="{{beckoning}}">
+      <image src='{{beckoning}}'></image>
+    </view> 
+  </view>
+</template>

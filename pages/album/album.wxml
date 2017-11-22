@@ -1,0 +1,28 @@
+<view class="container">
+
+  <view class='album-title'>{{myAlbum?'我的相册':'相册'}}</view>
+  <view wx:if="{{!isEmpty}}">
+    <view class='photo-list'>
+      <view wx:if="{{isMy}}" class='photo-detail' bindtap='addPhoto'>
+        <image src='../../imgs/icon/yinxiang_camera_big.png'></image>
+      </view>
+      <block wx:for="{{thumb_img_path}}">
+        <view class='photo-detail' data-src="{{img_path}}" data-index="{{index}}" catchtap='previewImage'>
+          <image src='{{item}}' mode='aspectFill'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view wx:else>
+    <view class='empty'>
+      <image class='empty-img' src='{{imgUrl}}blank_camera.png'></image>
+    </view>
+   
+    <view class='empty-tip1'>暂无照片</view>
+     <view wx:if="{{isMy}}">
+    <view class='empty-tip2'>你可以添加照片到相册</view>
+    <view class='empty-tip2'>让他人更了解你哦~</view>
+    <view class='add-btn' bindtap='addPhoto'>添加</view>
+  </view>
+  </view>
+</view>

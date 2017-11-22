@@ -1,0 +1,70 @@
+<view class='container'>
+  <view class='label-head' style="background: url('{{imgUrl}}hp_bj.png'); background-size:100% auto;">
+    <view class='label-title'>好友星印象</view>
+    <view class='label-num'>{{num}}+</view>
+    <view class='label-tip'>选择你心中代表我的三个词</view>
+    <view class='add-label-icon' wx:if="{{!allShow}}" bindtap='bindAddLabel'>
+      <image src='../../imgs/icon/planet_add_friend.png'></image>
+      <view class='add-icon-text'>添加印象</view>
+    </view>
+    <view class='beckoning-icon'>
+      <image></image>
+    </view>
+  </view>
+  <view class='label-body'>
+    <view class='label-list'>
+      <block wx:for="{{labelArrow}}" wx:for-index="index">
+        <view class="label-item {{index%3==1?'label-item-mid':''}}" bindtap='choiceLabel' data-index="{{index}}">
+          <view class="label-item-con {{index%3==1?'label-mid':''}} {{item.clicked||allShow?'label-item-dashed':''}}">
+            <view class="label-inside {{item.clicked||allShow?'inside-white':''}}">
+              <image src="{{item.last_good_url}}" class='label-img' wx:if="{{item.clicked||allShow&&item.hasImg}}" mode='aspectFill'></image>
+              <view class="tag-lary {{item.clicked||allShow?'isBlack':''}}">
+              <view class="label-detail-con {{item.clicked||allShow?'label-detail-con-click':''}}">{{item.name}}</view>
+              <view class='agree-icon'>
+                <image src="{{item.clicked||allShow?'../../imgs/icon/fabulous@click.png':'../../imgs/icon/fabulous.png'}}"></image>
+                {{item.goods_num}}
+              </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='layer' wx:if="{{isLayer}}" bindtap='hideLayer'></view>
+  <view class='add-input' wx:if="{{isAdd}}">
+    <view class='input-left'>
+      <input class='input-area' maxlength='5' placeholder="输入对TA的星印象（5个字以内）" placeholder-style='font-size: 34rpx;color: #606060;' bindinput="addLableInput" focus='true' type='text'></input>
+    </view>
+    <view class='mid-line'></view>
+    <view class='input-right' bindtap='addLabel'>添加</view>
+  </view>
+
+
+  <view class='label-choice-detail' wx:if="{{detailShow}}" >
+    <view class='choice-detail-body' animation="{{detailAnimation}}">
+      <view class='lable-choice-title'>{{labelNum}}人选择
+        <span class='red-color'>{{labelName}}</span>
+      </view>
+      <view class='user-list'>
+      <block wx:for="{{labelInfoList}}">
+        <view class='user-detail'>
+          <view class='user-left'>
+            <image class='user-head' src='{{item.good_url}}' mode='aspectFill'></image>
+          </view>
+          <view class='user-mid'>
+            <view class='user-name'>{{item.nickname}}</view>
+            <view class='user-label'>
+              <span>{{labelName}}</span></view>
+          </view>
+          <!-- <view class='choice-time'>{{add_time}}</view> -->
+        </view>
+      </block>
+      </view>
+
+    </view>
+    <view class='cloce-icon' bindtap='closeDetail'>
+    <image src='{{imgUrl}}yinxiang_close.png'></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,75 @@
+@import "../tpls/message/message_tpl.wxss";
+@import "../tpls/empty/empty.wxss";
+@import "../tpls/prompt/prompt_tpl.wxss";
+.page-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60px;
+  padding-top: 14rpx;
+  padding-left: 40rpx;
+  font-weight: bold;
+}
+.message-detail{
+  height: 180rpx;
+  margin-left: 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-align: center;
+
+}
+.message-left{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  position: relative;
+}
+.message-img{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius:50%;
+  margin: 7rpx auto; 
+}
+.message-num{
+  position: absolute;
+  width:40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  background: #FF2568;
+  left: 72rpx;
+  bottom: 81rpx;
+  border-radius: 50%;
+}
+.message-middle{
+  margin-left: 18rpx;
+}
+.message-title{
+  font-size: 34rpx;
+  color: #212121;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-bottom: 1rpx;
+}
+.message-content{
+  font-size: 32rpx;
+  color: #606060;
+  letter-spacing: 0;
+  margin-top: 2rpx;
+  width: 450rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.message-time{
+  position: absolute;
+  top: 28rpx;
+  right: 24rpx;
+  font-size: 24rpx;
+  color: #7A7A84;
+  letter-spacing: 0;
+}

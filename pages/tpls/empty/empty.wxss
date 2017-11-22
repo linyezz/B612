@@ -1,0 +1,12 @@
+.empty-img{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 89rpx;
+}
+.empty-cont{
+  font-size: 40rpx;
+  color: #302C48;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 111rpx;
+}

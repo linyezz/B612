@@ -1,0 +1,21 @@
+<view calss="container">
+  <view class='phone-title'>我的微信号</view>
+  <view class='phone-img'>
+    <image src='{{imgUrl}}warrant_wechat.png'></image>
+  </view>
+  <view class='phone-text' wx:if="{{!isApply}}">
+    授权获取你的微信号，互相星动或成功加好友后，可以选择互换双方的微信号
+  </view>
+  <view wx:if="{{isApply}}">
+  <view class='phone-number'>微信号：{{phoneNumber}}</view>
+  <view class='show-phone'>
+  <view class='show-phone-title'>向好友展示我的微信号</view>
+  <switch checked='true' bindchange='switchChange'></switch>
+  </view>
+  </view>
+<view class='btn-body' wx:if="{{!isApply}}">
+  <button class='get-phone' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>
+    授权微信号
+  </button>
+</view>
+</view>

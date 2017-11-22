@@ -1,0 +1,11 @@
+<view class="container">
+  <view class='accredit-title'>微信未授权</view>
+  <image class='accredit-img' src='{{imgUrl}}refuse_1.png'></image>
+  <view class='accredit-cont1'>请允许我们获取您的基础信息才能使用</view>
+  <view class='accredit-bottom' bindtap='openSetting'>重新授权</view>
+  <view class='accredit-cont2'>点击重新授权，前往设置页面请将下图所示开关打开</view>
+ 
+  <view class='setting-img'>
+  <image src="{{imgUrl}}refuse_2.png"></image>
+  </view>
+</view>

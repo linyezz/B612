@@ -1,0 +1,55 @@
+.job-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  padding-top: 14rpx;
+  padding-left: 40rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.job-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6rpx;
+ 
+  justify-content: flex-start;
+}
+.job-item{
+  width: 222rpx;
+  height: 222rpx;
+  box-shadow: 0 2rpx 10rpx 0 rgba(145,145,145,0.25);
+  border-radius: 6rpx;
+  text-align: center;
+  padding-top: 1rpx;
+  margin-bottom: 24rpx;
+  margin-left: 18rpx;
+}
+.job-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 35rpx;
+
+}
+.job-name{
+  font-size: 30rpx;
+  color: #302E40;
+  margin-top: 8rpx;
+}
+.bottom{
+  height: 102rpx;
+  width: 100%;
+  background: linear-gradient(-45deg, #FE51A0 0%, #FF6262 100%);
+  font-family: PingFangSC-Regular;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  line-height: 102rpx;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+.job-clicked{
+  width: 220rpx;
+  height: 220rpx;
+  border: 1rpx solid #FE4F7A;
+}

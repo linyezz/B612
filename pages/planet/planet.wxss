@@ -1,0 +1,178 @@
+/* pages/planet/planet.wxss */
+
+page {
+  background: #132035;
+}
+
+.planet-container {
+   
+  background: url(http://ztest2-pic.miliyo.com/mp/i/B612/plant_bg.png) no-repeat;
+  background-size:100% auto; 
+}
+
+.planet-title {
+  font-size: 64rpx;
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  padding-top: 14rpx;
+  padding-left: 40rpx;
+}
+
+.planet-detail {
+  width: 543rpx;
+  height: 543rpx;
+  border-radius: 50%;
+  border: 2rpx solid #FCB5D9;
+  margin-top: 140rpx;
+  margin-left: 81rpx;
+  position: relative;
+  box-shadow: 0 0 43rpx 0 #FE4F7A, inset 0 1rpx 43rpx 0 #8A73FF;
+
+}
+
+.planet-mian {
+  width: 348rpx;
+  height: 348rpx;
+  border-radius: 50%;
+  /* background: #d7d7d7; */
+  margin: 90rpx auto;
+  box-shadow: 0 0 43rpx 7rpx #71b0ff,inset 0 1rpx 43rpx 0 #FE4F7A;
+  position: relative;
+  padding: 1rpx;
+}
+.bg-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.outside-img{
+  position: absolute;
+  width: 309rpx;
+  height:268rpx;
+  bottom: 17rpx;
+  left: 20rpx;
+  z-index: 3;
+}
+.user-img{
+  width: 224rpx;
+  height: 224rpx;
+  display: inline-block;
+  margin-top:53rpx;
+  margin-left: 57rpx; 
+  border-radius: 50%;
+}
+
+.planet-trank{
+  position: absolute;
+  width: 528rpx;
+  height: 528rpx;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  
+}
+.trank-inside{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+ -webkit-animation: rotateScale 50s linear infinite;
+ 
+}
+.planet-friend {
+  
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background: url(http://ztest2-pic.miliyo.com/mp/i/B612/head_big.png) no-repeat;
+  background-size:100% 100%; 
+  bottom: 5rpx;
+  left: 5rpx;
+  
+}
+.planet-friend image{
+  width: 104.8rpx;
+  height: 104.8rpx;
+  display: block;
+  margin: 7.7rpx auto;
+  border-radius:50%;
+}
+
+swiper-item{
+   /* height: 900rpx;  */
+  overflow: visible;
+}
+swiper swiper-item{
+  height: 70%;
+}
+/* @-webkit-keyframes rotateScale{
+  from{
+    -webkit-transform: rotate(0deg);
+
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+} */
+.planet-list{
+height: 1032rpx;
+overflow: hidden;
+}
+.swiper{
+  overflow: visible;
+}
+.swiper-item{
+  padding-top: 1rpx;
+  height: 600rpx;
+  overflow: visible;
+}
+.galaxien{
+  position: absolute;
+  bottom: 106rpx;
+  right: -78rpx;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+.galaxien-icon image{
+  width: 52rpx;
+  height: 20rpx;
+
+}
+.galaxien-icon-name{
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 45rpx;
+  margin-left: 8rpx;
+}
+.single-cont{
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 45rpx;
+  padding: 32rpx 40rpx 0 40rpx;
+  position: fixed;
+  top: 106rpx;
+}
+.add-icon{
+  width: 93rpx;
+  height: 93rpx;
+  position: absolute;
+  bottom: 35rpx;
+  right: 35rpx;
+}
+.layer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0;
+  right: 0;
+  bottom: 0;
+  background: #141E3F;
+}
+

@@ -1,0 +1,52 @@
+.accredit-title{
+  font-size: 64rpx;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 60rpx;
+  font-weight: bold;
+  padding: 38rpx 0rpx 42rpx 40rpx;
+}
+.accredit-img{
+  width: 750rpx;
+  height: 254rpx;
+}
+.accredit-cont1{
+  width: 400rpx;
+  margin: 24rpx auto;
+  opacity: 0.7;
+  font-size: 30rpx;
+  color: #302C48;
+  line-height: 50rpx;
+  text-align: center;
+}
+.accredit-bottom{
+  margin: 40rpx auto;
+  width: 244rpx;
+  height: 88rpx;
+  background: linear-gradient(-45deg, #FE51A0 0%, #FF6262 100%);
+  box-shadow: 0 26rpx 50rpx 0 #FFA5BB;
+  border-radius: 200px;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.accredit-cont2{
+  opacity: 0.7;
+  font-size: 26rpx;
+  color: #302C48;
+  line-height: 40rpx;
+  text-align: center;
+  margin: 24rpx auto;
+  padding-top: 54rpx;
+  width: 336rpx;
+}
+.setting-img{
+  margin: 0 auto;
+  text-align: center;
+
+}
+.setting-img image{
+  width: 524rpx;
+  height: 262rpx;
+}

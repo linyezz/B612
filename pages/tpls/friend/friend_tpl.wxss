@@ -1,0 +1,66 @@
+@import '../avatar/avatar_tpl.wxss';
+@import '../sex/sex_tpl.wxss';
+.friend-detail {
+  height: 180rpx;
+  margin-left: 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding-right: 40rpx;
+}
+
+.friend-middle {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+
+.friend-name {
+  font-size: 34rpx;
+  color: #212121;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-right: 14rpx;
+  margin-left: 16rpx;
+}
+
+.add-btn {
+  background: linear-gradient(-45deg, #FE51A0 0%, #FF6262 100%);
+  border-radius: 9px;
+  width: 136rpx;
+  height: 64rpx;
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 64rpx;
+}
+
+.added-btn {
+  opacity: 0.08;
+  background: #000;
+  border-radius: 9px;
+  width: 136rpx;
+  height: 64rpx;
+  font-size: 32rpx;
+  color: #bebebe;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 64rpx;
+}
+.all-friend{
+  font-size: 32rpx;
+  color: #939393;
+  letter-spacing: 0;
+}
+.beckoning{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+.beckoning image{
+   width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}

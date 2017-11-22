@@ -1,0 +1,10 @@
+<template name="prompt">
+  <view class='prompt-body'>
+    <view class='prompt.title'>{{prompt.title}}</view>
+    <image class='prompt-img' src="{{prompt.img}}"></image>
+    <view class='prompt-cont'>{{prompt.cont}}</view>
+    <view class='prompt-btn' wx:if="{{prompt.types==1}}" bindtap='hideLayer'>
+    我知道了
+    </view>
+  </view>
+</template>

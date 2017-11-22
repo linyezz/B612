@@ -1,0 +1,15 @@
+<import src="../tpls/empty/empty.wxml"/>
+<import src="../tpls/message/message_tpl.wxml"/>
+<import src="../tpls/prompt/prompt_tpl.wxml"/>
+  <view class="container">
+    <view class='beckoning-title'>收到的印象</view>
+      <view class='beckoning-list'>
+        <block wx:for="{{message}}">
+          <template is="messageInfo" data="{{message:item,index:index}}"></template>
+        </block>
+    </view>
+  <view class='layer' wx:if="{{isLayer}}" bindtap='hideLayer'></view>
+  <view wx:if="{{prompt.show}}">
+   <template is="prompt" data="{{prompt:prompt}}"></template>
+   </view>
+  </view>
