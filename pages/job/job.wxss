@@ -1,3 +1,7 @@
+@import '../tpls/title/title_tpl.wxss';
+.title{
+  margin-bottom: 40rpx;
+}
 .job-title{
   font-size: 64rpx;
   color: #212121;

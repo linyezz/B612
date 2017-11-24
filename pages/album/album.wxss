@@ -1,4 +1,8 @@
 /* pages/album/album.wxss */
+@import '../tpls/title/title_tpl.wxss';
+.title{
+   margin-bottom: 40rpx;
+}
 .album-title{
   margin-top: 12rpx;
   margin-left: 40rpx;

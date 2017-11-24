@@ -1,6 +1,7 @@
 /* pages/friends/friends.wxss */
 @import "../tpls/friend/friend_tpl.wxss";
 @import "../tpls/empty/empty.wxss";
+@import '../tpls/title/title_tpl.wxss';
 .friend-title{
 font-size: 64rpx;
 color: #212121;

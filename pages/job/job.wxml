@@ -1,5 +1,6 @@
+<import src="../tpls/title/title_tpl.wxml" />
 <view class="container">
-  <view class='job-title'>选择职业</view>
+  <template is="title" data="{{title:'选择职业'}}"></template>
   <view class='job-list'>
     <block wx:for="{{jobList}}">
       <view class="job-item {{item.clicked?'job-clicked':''}}" bindtap='jobChoice' data-index="{{index}}">

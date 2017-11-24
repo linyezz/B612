@@ -216,7 +216,8 @@ Page({
     var arrow = this.data.planetList;
     var all = arrow.length - 1;
     var lastCurrent = this.data.lastCurrent
-    if (isLast == 1) {
+    var page=that.data.page
+    if (isLast == 1 || page==1) {
       this.setData({
         myStyle: '-webkit-transform: scale(1) translate3d(0,0,0);-webkit-transition: -webkit-transform 1s',
         isLast: 0

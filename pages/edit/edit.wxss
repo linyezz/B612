@@ -1,5 +1,6 @@
 /* pages/edit/edit.wxss */
 @import '../tpls/arrow/arrow_tpl.wxss';
+@import '../tpls/title/title_tpl.wxss';
 .edit-head{
   padding-top: 19rpx;
   display: flex;

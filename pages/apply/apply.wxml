@@ -1,7 +1,8 @@
 <import src="../tpls/friend/friend_tpl.wxml" />
 <import src="../tpls/empty/empty.wxml"/>
+<import src='../tpls/title/title_tpl.wxml' />
 <view class='container'>
-  <view class='apply-title'>好友申请</view>
+   <template is="title" data="{{title:'好友申请'}}"></template>
   <view wx:if="{{isEmpty}}">
 <template is="pageEmpty" data="{{pageEmpty}}"></template>
 </view>

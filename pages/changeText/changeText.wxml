@@ -1,12 +1,12 @@
+<import src='../tpls/title/title_tpl.wxml' />
 <view class="container">
-<view class='change-title'>{{title}}</view>
-<view class='line'></view>
-<view class='input-area'>
-<textarea class='text-area' maxlength='{{maxlength}}' value='{{content}}'  bindinput="bindInput">
+  <template is="title" data="{{title}}"></template>
+  <view class='line'></view>
+  <view class='input-area'>
+    <textarea class='text-area' maxlength='{{maxlength}}' value='{{content}}' bindinput="bindInput">
 
-</textarea>
-<view class='word-num'>{{wordNum}}/{{maxlength}}</view>
+    </textarea>
+    <view class='word-num'>{{wordNum}}/{{maxlength}}</view>
+  </view>
+  <view class='preservation' bindtap='postContent'>保存</view>
 </view>
-<view class='preservation' bindtap='postContent'>保存</view>
-</view>
-

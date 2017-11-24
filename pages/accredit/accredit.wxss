@@ -1,3 +1,7 @@
+@import '../tpls/title/title_tpl.wxss';
+.title{
+  padding-bottom: 42rpx;
+}
 .accredit-title{
   font-size: 64rpx;
   color: #212121;

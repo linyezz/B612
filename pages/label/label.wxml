@@ -1,6 +1,7 @@
+<import src="../tpls/title/title_tpl.wxml" />
 <view class='container'>
   <view class='label-head' style="background: url('{{imgUrl}}hp_bj.png'); background-size:100% auto;">
-    <view class='label-title'>好友星印象</view>
+    <template is="title" data="{{title:'好友星印象'}}"></template>
     <view class='label-num'>{{num}}+</view>
     <view class='label-tip'>选择你心中代表我的三个词</view>
     <view class='add-label-icon' wx:if="{{!allShow}}" bindtap='bindAddLabel'>

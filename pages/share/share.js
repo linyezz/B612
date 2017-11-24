@@ -21,36 +21,31 @@ Page({
       uid: uid
     })
       that.drawImg()
-    
-    
-    
-    
   },
   drawImg(){
-
     var context = wx.createCanvasContext('share');
-
     context.fill(0, 0, 310, 248)
     context.drawImage('../../imgs/icon/card_share_planet.png', 0, 0, 310, 248)
-    
     context.draw();
     context.setFillStyle('#212121')
-    
     context.setFillStyle('white')
     context.setFontSize(16)
     context.fillText('你愿意成为我的小星星吗?', 63, 38)
     context.draw(true);
-    
   },
  keepPicture:function(){
    var that=this;
    wx.canvasToTempFilePath({
      canvasId: 'share',
      success:res=>{
+       console.log(res)
         that.setData({
           url: res.tempFilePath
         })
         that.saveImageToPhotosAlbum()
+     },
+     fail:res=>{
+       console.log(res)
      }
    })
  },
@@ -59,7 +54,8 @@ Page({
    var tempFilePath = that.data.url;
     var parem={
       scope:'writePhotosAlbum',
-      callBack:function(){
+      callBack:function(res){
+        console.log(res)
         wx.saveImageToPhotosAlbum({
           filePath: tempFilePath,
           success:function(){
@@ -91,7 +87,5 @@ Page({
        }
    }
    }
-   
  }
-
 })

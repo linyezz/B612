@@ -1,4 +1,8 @@
 /* pages/phone/phone.wxss */
+@import '../tpls/title/title_tpl.wxss';
+.title{
+  padding-bottom: 40rpx;
+}
 .phone-title{
   font-size: 64rpx;
   color: #212121;

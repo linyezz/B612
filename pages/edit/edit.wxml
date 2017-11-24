@@ -1,4 +1,5 @@
 <import src='../tpls/arrow/arrow_tpl.wxml' />
+<import src='../tpls/title/title_tpl.wxml' />
 <view class="container">
   <view class='edit-head' style='background: url({{imgUrl}}hp_bj.png) no-repeat;background-size:100% auto; '>
     <view class='user-header'>

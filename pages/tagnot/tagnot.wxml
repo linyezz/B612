@@ -1,8 +1,9 @@
 <import src="../tpls/empty/empty.wxml"/>
 <import src="../tpls/message/message_tpl.wxml"/>
 <import src="../tpls/prompt/prompt_tpl.wxml"/>
+<import src="../tpls/title/title_tpl.wxml"/>
   <view class="container">
-    <view class='beckoning-title'>收到的印象</view>
+    <template is="title" data="{{title:'收到的印象'}}"></template>
       <view class='beckoning-list'>
         <block wx:for="{{message}}">
           <template is="messageInfo" data="{{message:item,index:index}}"></template>

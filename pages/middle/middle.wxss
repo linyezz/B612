@@ -1,4 +1,8 @@
 /* pages/middle/middle.wxss */
+@import '../tpls/title/title_tpl.wxss';
+.title{
+  color: #fff;
+}
 .middle-container{
   position: absolute;
   top: 0;

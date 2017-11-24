@@ -1,6 +1,7 @@
+<import src="../tpls/title/title_tpl.wxml" />
 <view class="container">
-<view class='share-title'>单身星球</view>
+<template is="title" data="{{title:'单身星球'}}"></template>
 <canvas class="sahre-img"  canvas-id="share"/>
-<view class='Preservation' bindtap='keepPicture'>保存二维码图片</view>
-<button open-type='share' class='send-out' >发送给好友</button>
+<button open-type='share' class='Preservation'>发送给好友</button>
+<view  bindtap='keepPicture' class='send-out'>保存二维码图片</view>
 </view>

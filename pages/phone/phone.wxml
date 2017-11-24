@@ -1,5 +1,6 @@
+<import src="../tpls/title/title_tpl.wxml" />
 <view calss="container">
-  <view class='phone-title'>我的微信号</view>
+   <template is="title" data="{{title:'我的微信号'}}"></template>
   <view class='phone-img'>
     <image src='{{imgUrl}}warrant_wechat.png'></image>
   </view>

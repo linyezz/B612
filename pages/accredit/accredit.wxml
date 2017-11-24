@@ -1,5 +1,6 @@
+<import src='../tpls/title/title_tpl.wxml' />
 <view class="container">
-  <view class='accredit-title'>微信未授权</view>
+ <template is="title" data="{{title:'微信未授权'}}"></template>
   <image class='accredit-img' src='{{imgUrl}}refuse_1.png'></image>
   <view class='accredit-cont1'>请允许我们获取您的基础信息才能使用</view>
   <view class='accredit-bottom' bindtap='openSetting'>重新授权</view>

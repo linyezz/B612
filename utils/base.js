@@ -79,7 +79,7 @@ class Base {
         if (res.authSetting['scope' + param.scope]) {
           that.getUserAuth(param)
         } else {
-          param.callBack && param.callBack()
+          param.callBack && param.callBack(res)
         }
       }
     })
@@ -90,7 +90,7 @@ class Base {
     wx.authorize({
       scope: param.scope,
       success: res => {
-        param.callBack && param.callBack()
+        param.callBack && param.callBack(res)
       }
     })
   }

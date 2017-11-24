@@ -1,7 +1,6 @@
+<import src="../tpls/title/title_tpl.wxml" />
 <view class='container planet-container' >
-  <view class="planet-title">
-    单身星球
-  </view>
+  <template is="title" data="{{title:'单身星球'}}"></template>
   <view class='single-cont' wx:if="{{!hasFriend}}">你已成功登陆3618号单身星球，愿每个孤单的星球，都能与平行轨道的另一颗星相遇</view>
   <view class='planet-list' id='planet'>
 

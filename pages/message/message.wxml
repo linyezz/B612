@@ -1,8 +1,9 @@
 <import src="../tpls/empty/empty.wxml" />
 <import src="../tpls/message/message_tpl.wxml"/>
 <import src="../tpls/prompt/prompt_tpl.wxml"/>
+<import src="../tpls/title/title_tpl.wxml"/>
 <view class='container'>
-  <view class='page-title'>通知</view>
+   <template is="title" data="{{title:'通知'}}"></template>
   <view wx:if="{{isEmpty}}">
     <template is="pageEmpty" data="{{pageEmpty}}">
     </template>  

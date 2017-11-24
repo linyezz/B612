@@ -1,0 +1,9 @@
+.title{
+  font-size:64rpx;
+  color:#212121;
+  letter-spacing:0;
+  line-height:60rpx;
+  padding-top:14rpx;
+  padding-left:40rpx;
+  font-weight:bold;
+}

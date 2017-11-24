@@ -1,6 +1,10 @@
 @import "../tpls/message/message_tpl.wxss";
 @import "../tpls/empty/empty.wxss";
 @import "../tpls/prompt/prompt_tpl.wxss";
+@import '../tpls/title/title_tpl.wxss';
+.title{
+  margin-bottom: 40rpx;
+}
 .beckoning-title{
   font-size: 64rpx;
   color: #212121;

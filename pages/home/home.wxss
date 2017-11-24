@@ -1,7 +1,12 @@
 /* pages/home/home.wxss */
 @import "../tpls/sex/sex_tpl.wxss";
+@import '../tpls/title/title_tpl.wxss';
 page{
   background: #141E3F;
+}
+.title{
+  color: #fff;
+  margin-bottom: 64rpx;
 }
 .home-head {
   display: -webkit-box;

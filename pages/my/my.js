@@ -1,12 +1,13 @@
 import {My} from "my_model.js";
 import {Scoket} from "../../utils/scoket.js";
+import {Config} from "../../utils/config.js";
 var my= new My()
 var scoket = new Scoket();
 const app =getApp()
 Page({
 
   data: {
-    
+    imgUrl: Config.imgUrl
   },
 
   onLoad: function (options) {

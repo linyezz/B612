@@ -27,7 +27,7 @@ Page({
     this.setData({
       userInfo: userInfo,
       region: region,
-      date: userInfo.birthday
+      date: userInfo.birthday.split(' ')[0]
     })
   },
   onShow:function(){

@@ -1,4 +1,5 @@
 /* pages/changeText/changeText.wxss */
+@import '../tpls/title/title_tpl.wxss';
 .change-title{
   font-size: 64rpx;
   color: #212121;

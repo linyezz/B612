@@ -1,8 +1,10 @@
 <import src="../tpls/sex/sex_tpl.wxml" />
+<import src="../tpls/title/title_tpl.wxml" />
 <view class='container'>
   <view class='home-head' style="background: url('{{homeBg}}'); background-size:100% auto;">
     <view class='home-head-left'>
-      <view class='home-my-name'>{{userInfo.nickname}}星</view>
+      <!-- <view class='home-my-name'>{{userInfo.nickname}}星</view> -->
+      <template is="title" data="{{title:userInfo.nickname+'星'}}"></template>
       <view class='home-my-avatar ' catchtap='previewImage' data-previewImage='{{userInfo.head_url}}'>
         <image class='home-my-image' src='{{userInfo.thumb_head_url}}' mode='aspectFill'></image>
         <image class='plant-rings' src='{{imgUrl}}hp_head.png'></image>

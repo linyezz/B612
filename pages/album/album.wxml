@@ -1,6 +1,7 @@
+<import src='../tpls/title/title_tpl.wxml' />
 <view class="container">
-
-  <view class='album-title'>{{myAlbum?'我的相册':'相册'}}</view>
+  <!-- <view class='album-title'>{{myAlbum?'我的相册':'相册'}}</view> -->
+  <template is="title" data="{{title:myAlbum?'我的相册':'相册'}}"></template>
   <view wx:if="{{!isEmpty}}">
     <view class='photo-list'>
       <view wx:if="{{isMy}}" class='photo-detail' bindtap='addPhoto'>

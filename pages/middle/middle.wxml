@@ -1,22 +1,23 @@
+<import src="../tpls/title/title_tpl.wxml" />
 <view class="container middle-container" style='background: url({{imgUrl}}maybe_bj.png) no-repeat;background-size:100% 100%;'>
-  <view class='middle-title'>可能认识的人</view>
+  <template is="title" data="{{title:'可能认识的人'}}"></template>
   <view class='middle-cont'>你和{{friendList.last_friend_info.nickname}}暂无共同好友，不能直接申请，先和她的朋友成为好友吧~</view>
   <view class='middle-body'>
     <view class='user-body my' style=' background: url({{imgUrl}}head_big.png) no-repeat;background-size:100% 100%; '>
-    <image class='user-head' src='{{userInfo.thumb_head_url}}'></image>
+      <image class='user-head' src='{{userInfo.thumb_head_url}}'></image>
     </view>
     <view class='user-body middle-friend' style=' background: url({{imgUrl}}head_big.png) no-repeat;background-size:100% 100%; '>
-    <image class='add-head' src='{{friendList.middle_friend_info.thumb_head_url}}'></image>
-    <image class='add-icon' src='{{imgUrl}}may_know.png'></image>
+      <image class='add-head' src='{{friendList.middle_friend_info.thumb_head_url}}'></image>
+      <image class='add-icon' src='{{imgUrl}}may_know.png'></image>
     </view>
-    <view class='user-body third-friend'style=' background: url({{imgUrl}}head_big.png) no-repeat;background-size:100% 100%; '>
-    <image class='user-head' src="{{friendList.last_friend_info.thumb_head_url}}"></image>
+    <view class='user-body third-friend' style=' background: url({{imgUrl}}head_big.png) no-repeat;background-size:100% 100%; '>
+      <image class='user-head' src="{{friendList.last_friend_info.thumb_head_url}}"></image>
     </view>
     <view class='may-know-line1'>
-    <image src='{{imgUrl}}may_know_line.png'></image>
+      <image src='{{imgUrl}}may_know_line.png'></image>
     </view>
     <view class='may-know-line2'>
-    <image src='{{imgUrl}}may_know_line2.png'></image>
+      <image src='{{imgUrl}}may_know_line2.png'></image>
     </view>
   </view>
 </view>

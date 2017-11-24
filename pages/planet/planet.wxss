@@ -1,5 +1,10 @@
 /* pages/planet/planet.wxss */
-
+@import '../tpls/title/title_tpl.wxss';
+.title{
+  color: #fff;
+  padding-top: 0;
+  line-height: normal;
+}
 page {
   background: #132035;
 }
