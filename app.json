@@ -44,9 +44,9 @@
         "selectedIconPath": "imgs/icon/my@selected.png"
       }
     ],
-    "backgroundColor":"#111D31",
+    "backgroundColor":"#07070F",
     "color": "#7F8389",
     "selectedColor": "#ffffff"
   },
-  "debug":false
+  "debug":true
 }

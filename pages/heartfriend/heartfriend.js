@@ -51,14 +51,23 @@ Page({
     var friend_uid1 = heart.getDataSet(e, 'one');
     var friend_uid2 = heart.getDataSet(e, 'two');
     var friend_uid3 = heart.getDataSet(e, 'three');
+    var index = heart.getDataSet(e, 'index');
+    var relationship = this.data.heartInfo[index].type;
+    var uid =parseInt(this.data.heartInfo[index].friend_uid);
     if (friend_uid1 == undefined) {
       friend_uid1 = ''
     }
-    if (friend_uid2 == undefined) {
+    if (friend_uid2 == undefined || friend_uid2 == 0) {
+      friend_uid1 = uid;
       friend_uid2 = ''
     }
-    if (friend_uid3 == undefined) {
+    if (friend_uid3 == undefined || friend_uid3 == 0) {
       friend_uid3 = ''
+    }
+    if (relationship==2){
+      friend_uid1=uid;
+      friend_uid2=""
+      friend_uid3=""
     }
     wx.navigateTo({
       url: '../home/home?friend_uid1=' + friend_uid1 + '&friend_uid2=' + friend_uid2 + '&friend_uid3=' + friend_uid3,

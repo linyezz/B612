@@ -33,6 +33,7 @@ Page({
     }
     if (friend_uid2 || friend_uid2 != "") {
       label.getLabelList(param,function(res){
+        console.log(res)
         that.setData({
           labelArrow: res.data.data,
           allShow:true,

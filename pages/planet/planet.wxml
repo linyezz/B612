@@ -1,42 +1,50 @@
 <import src="../tpls/title/title_tpl.wxml" />
 <view class='container planet-container' >
+<view class='main-role' style='{{mainRole}}'>
+<image src='{{imgUrl}}plant_halo.png'></image>
+</view>
   <template is="title" data="{{title:'单身星球'}}"></template>
   <view class='single-cont' wx:if="{{!hasFriend}}">你已成功登陆3618号单身星球，愿每个孤单的星球，都能与平行轨道的另一颗星相遇</view>
   <view class='planet-list' id='planet'>
-
-
     <view class='swiper' style='{{swiperMove}}' bindtouchstart='touchStart' catchtouchmove='touchMove' catchtouchend='touchEnd'>
       <block wx:for="{{planetList}}" wx:if="{{hasFriend}}" wx:for-item="planetList" wx:for-index="planetIndex">
         <view class='swiper-item'>
           <view class='planet-detail' style='{{planetList.style}}'>
+          <view class='first-role'>
+          <image src='{{imgUrl}}hp_star_tracks.png'></image>
+          </view>
             <view class='planet-mian' bindtap='toFriend' data-friendone='{{planetList.uid}}'>
-              <image class='bg-img' src='{{imgUrl}}plant_bj.png'></image>
+              <image class='bg-img' src="{{imgUrl}}{{planetList.sex==1?'plant_bj_man.png':'plant_bj.png'}}"></image>
               <image mode='aspectFill' class='user-img' src='{{planetList.thumb_head_url}}'></image>
-              <image class='outside-img' src='../../imgs/icon/plant_top.png'></image>
+              <image class='outside-img' src="{{imgUrl}}{{planetList.sex==1?'plant_top_man.png':'plant_top2.png'}}"></image>
             </view>
             <block wx:for="{{planetList.planetTrank}}">
               <view class='planet-trank' style='{{item.roate}}'>
                 <view class='trank-inside'>
-                  <view class='planet-friend' style='{{item.headRoate}}' data-friendone="{{planetList.uid}}" data-friendtwo='{{item.uid}}' data-index='{{index}}' data-planetIndex="{{planetIndex}}" catchtap='toFriend'>
+                  <view class='{{item.headRoate}}' style='{{}}' data-friendone="{{planetList.uid}}" data-friendtwo='{{item.uid}}' data-index='{{index}}' data-planetIndex="{{planetIndex}}" catchtap='toFriend'>
                     <image mode='aspectFill' class='planet-friend-img' src='{{item.thumb_head_url}}'></image>
                   </view>
                 </view>
               </view>
+            
+            </block>
               <view class='galaxien'>
                 <view class='galaxien-icon'>
                   <image src='../../imgs/icon/planet_name.png'></image>
                 </view>
                 <view class='galaxien-icon-name'>
-                  <view>{{planetList.nickname}}</view>
+                  <view class='galaxien-title'>{{planetList.nickname}}</view>
                   <view>星系</view>
                 </view>
               </view>
-            </block>
           </view>
         </view>
       </block>
       <view class='swiper-item'>
         <view class='planet-detail' style='{{myStyle}}'>
+         <view class='first-role'>
+          <image src='{{imgUrl}}hp_star_tracks.png'></image>
+          </view>
           <view class='planet-mian' bindtap='toFriend' data-friendId='{{item.userId}}'>
             <image class='bg-img' src='{{imgUrl}}plant_bj.png'></image>
             <image class='user-img' mode='aspectFill' src='{{userInfo.thumb_head_url}}'></image>
@@ -45,16 +53,10 @@
           <view bindtap='share'>
             <image class='add-icon' src='../../imgs/icon/planet_add_friend.png'></image>
           </view>
-
-
-
         </view>
       </view>
     </view>
   </view>
-
-
-
 </view>
 <view class='layer' hidden="{{loadingHidden}}">
 <loading >

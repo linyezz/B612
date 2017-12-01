@@ -11,9 +11,11 @@ page {
 
 .planet-container {
    
-  background: url(http://ztest2-pic.miliyo.com/mp/i/B612/plant_bg.png) no-repeat;
+  background: url(http://ztest2-pic.miliyo.com/mp/i/B612/maybe_bj2.png) no-repeat;
   background-size:100% auto; 
+  position: relative;
 }
+
 
 .planet-title {
   font-size: 64rpx;
@@ -28,14 +30,32 @@ page {
   width: 543rpx;
   height: 543rpx;
   border-radius: 50%;
-  border: 2rpx solid #FCB5D9;
+    /* border: 0rpx solid #FCB5D9;  */
   margin-top: 140rpx;
   margin-left: 81rpx;
   position: relative;
-  box-shadow: 0 0 43rpx 0 #FE4F7A, inset 0 1rpx 43rpx 0 #8A73FF;
+  padding-top: 1rpx;
+   /* box-shadow: 0 0 43rpx 0 #FE4F7A, inset 0 1rpx 43rpx 0 #8A73FF;  */
 
 }
-
+.main-role{
+  position: absolute;
+  left: 0;
+  top: 170rpx;
+}
+.first-role{
+  position: absolute;
+  top: 109rpx;
+  left: -7rpx;
+}
+.first-role image{
+  width: 572rpx;
+  height: 328rpx;
+}
+.main-role image{
+  width: 750rpx;
+  height: 632rpx;
+}
 .planet-mian {
   width: 348rpx;
   height: 348rpx;
@@ -73,11 +93,10 @@ page {
 
 .planet-trank{
   position: absolute;
-  width: 528rpx;
-  height: 528rpx;
+  /* width: 528rpx;
+  height: 528rpx; */
   border-radius: 50%;
-  top: 0;
-  left: 0;
+  z-index: 10;
   
 }
 .trank-inside{
@@ -88,7 +107,7 @@ page {
  -webkit-animation: rotateScale 50s linear infinite;
  
 }
-.planet-friend {
+.planet-friend1 ,.planet-friend2,.planet-friend3{
   
   position: absolute;
   width: 120rpx;
@@ -100,12 +119,41 @@ page {
   left: 5rpx;
   
 }
-.planet-friend image{
+.planet-friend2{
+  
+  width: 156rpx;
+  height: 156rpx;
+  bottom: 5rpx;
+  left: 5rpx;
+}
+.planet-friend3{
+  
+  width: 96rpx;
+  height: 96rpx;
+  bottom: 5rpx;
+  left: 5rpx;
+}
+.planet-friend1 image{
   width: 104.8rpx;
   height: 104.8rpx;
   display: block;
   margin: 7.7rpx auto;
   border-radius:50%;
+}
+.planet-friend2 image{
+  width: 136rpx;
+  height: 136rpx;
+  display: block;
+  margin: 10rpx auto;
+  border-radius:50%;
+}
+.planet-friend3 image{
+  width: 84rpx;
+  height: 84rpx;
+  display: block;
+  margin: 6rpx auto;
+  border-radius:50%;
+  
 }
 
 swiper-item{
@@ -179,5 +227,9 @@ overflow: hidden;
   right: 0;
   bottom: 0;
   background: #141E3F;
+}
+.galaxien-title{
+  width: 130rpx;
+  word-break: break-all;
 }
 

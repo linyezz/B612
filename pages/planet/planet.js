@@ -103,14 +103,14 @@ Page({
       var planetTrank = res.data.two_friend
       for (let i in planetTrank) {
         if (i == 0) {
-          roate = "-webkit-transform: rotate(290deg)",
-            headRoate = "-webkit-transform: rotate(-290deg)"
+          roate = "top:488rpx;left:315rpx;",
+            headRoate = "planet-friend1"
         } else if (i == 1) {
-          roate = "-webkit-transform: rotate(0deg)",
-            headRoate = "-webkit-transform: rotate(0deg)"
+          roate = "top:508rpx;left:18rpx;",
+            headRoate = "planet-friend2"
         } else {
-          roate = "-webkit-transform: rotate(170deg)",
-            headRoate = "-webkit-transform: rotate(-170deg)"
+          roate = "top:234rpx;left:476rpx;",
+            headRoate = "planet-friend3"
         }
         planetTrank[i].roate = roate;
         planetTrank[i].headRoate = headRoate;
@@ -135,7 +135,8 @@ Page({
     var startY = e.touches[0].pageY;
     this.setData({
       startY: startY,
-      endY: 0
+      endY: 0,
+      mainRole:'opacity: 0;-webkit-transition:opacity 0.1s'
     })
   },
   touchMove: function (e) {
@@ -174,7 +175,8 @@ Page({
         var swiperMove = '-webkit-transform: translate3d(0,' + -endHeight + 'px,0);-webkit-transition:-webkit-transform 1s'
         this.setData({
           swiperMove: swiperMove,
-          current: current
+          current: current,
+          mainRole: 'opacity: 1;-webkit-transition:opacity 1s'
         })
         this.addFrineds()
       return;
@@ -194,7 +196,7 @@ Page({
       }
       that.setData({
         isLast: 0,
-        current: current
+        current: current,
       })
       this.changeItem();
     } 
@@ -204,7 +206,8 @@ Page({
     var swiperMove = '-webkit-transform: translate3d(0,' + -endHeight + 'px,0);-webkit-transition:-webkit-transform 1s'
     this.setData({
       swiperMove: swiperMove,
-      current: current
+      current: current,
+      mainRole: 'opacity: 1;-webkit-transition:opacity 1s'
     })
     
   },

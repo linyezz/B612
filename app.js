@@ -6,13 +6,11 @@ var scoket = new Scoket()
 var login = new Login()
 App({
   onLaunch: function () {
-   
     console.log('先执行APP注册')
-   
-   
+    login.verify();
   },
   onShow:function(){
-    login.verify();
+  
   },
  
  

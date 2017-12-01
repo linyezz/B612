@@ -1,7 +1,7 @@
 <import src="../avatar/avatar_tpl.wxml" />
 <import src="../sex/sex_tpl.wxml" />
 <template name="friend">
-  <view class='friend-detail' bindtap='friendHome' data-one='{{friend_uid1}}' data-two="{{friend_uid2}}" data-three="{{friend_uid3}}" wx:if="{{!isMy}}">
+  <view class='friend-detail' bindtap='friendHome' data-one='{{friend_uid1}}' data-two="{{friend_uid2}}" data-three="{{friend_uid3}}" data-index="{{index}}" wx:if="{{!isMy}}">
     <template is="avatar" data="{{thumb_head_url}}"></template>
     <view class='friend-middle'>
       <view class='friend-name'>{{nickname}}</view>

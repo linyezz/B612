@@ -135,10 +135,14 @@ Page({
     var impressionnum = home.getDataSet(e,'impressionnum')
     var uid=this.data.userInfo.uid
     var sex=this.data.userInfo.sex;
+    var uid2 = this.data.userInfo.friend_uid2
     var friend_uid2 = this.data.friend_uid2
-    wx.navigateTo({
-      url: '../label/label?uid=' + uid + '&sex=' + sex + "&friend_uid2=" + friend_uid2 + '&impressionnum=' + impressionnum,
-    })
+   
+      wx.navigateTo({
+        url: '../label/label?uid=' + uid + '&sex=' + sex + "&friend_uid2=" + friend_uid2 + '&impressionnum=' + impressionnum,
+      })
+    
+   
   },
   //好友列表
   goFriendList: function (e) {

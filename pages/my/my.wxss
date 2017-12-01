@@ -20,6 +20,7 @@
   color: #212121;
   letter-spacing: 0;
   line-height: 60rpx;
+  font-weight: bold;
 }
 .my-head-progress{
   font-size: 32rpx;
@@ -30,7 +31,6 @@
 .my-head-right{
   width: 134rpx;
   height: 134rpx;
-  
 }
 .my-head-right image{
   width: 116.8rpx;

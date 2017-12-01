@@ -45,7 +45,7 @@
         </view>
         </view>
         <!--二度好友  -->
-        <view wx:if="{{friend_uid1&&friend_uid2}}">
+        <view wx:if="{{friend_uid1&&friend_uid2&&friend_uid2!=0}}">
           <view class='home-edit'>
             <view class='edit-icon' bindtap='Beckoning' >
               <image wx:if="{{userInfo.is_heartflow==1}}" src='{{imgUrl}}hp_like.png'></image>
